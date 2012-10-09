@@ -1,0 +1,71 @@
+DNS vHost 
+Copyright © 2012 Nathan A. Mourey II <nmoureyii@ne.rr.com>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-------------------------------------------------------------------------------
+Thanks to :
+Mom, Dad, Tom L., Marni, Joe B., Jeff S., Bill B., Julie, Gene F., Aunte Joanne,
+Biff W., Byron F. who have either inspired or helped support this project.
+Sorry to anyone that I may have missed here. 
+-------------------------------------------------------------------------------
+				** Beta **
+DNS vHost
+	This software allows one to auto generate their zone files for DNS
+and virtual hosts for Apache.  Data is read from a flat file with data 
+seperated with ":".  The data is then inserted into a MySQL database.
+More informatin on these files can be found in the data/README file.
+Theroeticly you can run these programs from any host that has permissions
+to access a database on a remote host. 
+
+Before you begin you will have to have a MySQL server installed and
+configured.  You will need the ability to create a table.  The 
+schema for DNS vHost can be found in the sql directory.  Thier currently
+is no install scripts.  The way to install would be to :
+
+$ vim sql/dnsvhosts.sql 
+
+Change the $TABLE name to the table of your choosing.  Be sure to change the 
+$table variable in modules/config.pm to match that in dnsvhosts.sql.
+
+$ mysqladmin create <yourdbname> -u username -p
+$ mysql -u username -p <yourdbname> < sql/dnsvhosts.sql
+
+To Insert and Delete Entries from the database:
+
+dnsvhost.pl
+
+	The doamin name passed to -z must be the same as the one in the datafile.
+	Insert into database usage  : -z example.com -i <filename>
+	Delete from database usage  : -z example.com -d <filename>
+
+
+To generate zone files to include from an existing configured installation of
+BIND and matching Virtual Hosts for adding to a vhost.d directory to be
+included from your httpd.conf :
+
+dnshostgen.pl
+
+	dnsvhostgen.pl -z exmaple.com
+
+The output from dnsvhostgen.pl will be placed into $outputdir located in
+modules/config.pm  You will also need to change some of the variables in 
+modules/config.pm to suite your configuration.
+
+
+Good Luck!
+Improvments and addions will be greatly apprecated.
+
+
+

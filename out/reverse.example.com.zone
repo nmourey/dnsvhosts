@@ -1,0 +1,4 @@
+163		IN		PTR		test4.example.com.		; Test Host number 3
+162		IN		PTR		test3.example.com.		; Test Host number 3
+161		IN		PTR		test2.example.com.		; Test Host number 2
+160		IN		PTR		test1.example.com.		; Test Host number 1

@@ -1,0 +1,12 @@
+This is the format of a data file that dnsvhost.pl needs.
+The format is as follows:
+
+Host Name:IP Address:Network:Domain:Comment
+
+test1:160:192.168.0:example.com:Test Host number 1
+test2:161:192.168.0:example.com:Test Host number 2
+test3:162:192.168.0:example.com:Test Host number 3
+test4:163:192.168.0:example.com:Test Host number 3
+
+At this time you are not allow to add comments to the .dat files
+them selves.  
