@@ -1,4 +1,0 @@
-dev4		IN		A		192.168.1.28		; TComment ..
-dev3		IN		A		192.168.1.27		; Test Host number 3
-dev2		IN		A		192.168.1.26		; Another comment.
-dev1		IN		A		192.168.1.25		; Test Host number 1

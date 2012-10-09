@@ -1,4 +1,0 @@
-28		IN		PTR		dev4.humdumcomputing.com.		; TComment ..
-27		IN		PTR		dev3.humdumcomputing.com.		; Test Host number 3
-26		IN		PTR		dev2.humdumcomputing.com.		; Another comment.
-25		IN		PTR		dev1.humdumcomputing.com.		; Test Host number 1

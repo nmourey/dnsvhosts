@@ -1,4 +1,0 @@
-test4		IN		A		192.168.0.163		; Test Host number 3
-test3		IN		A		192.168.0.162		; Test Host number 3
-test2		IN		A		192.168.0.161		; Test Host number 2
-test1		IN		A		192.168.0.160		; Test Host number 1
