@@ -63,6 +63,9 @@ The output from dnsvhostgen.pl will be placed into $outputdir located in
 modules/config.pm  You will also need to change some of the variables in 
 modules/config.pm to suite your configuration.
 
+NOTE: you may need to create the directory ./out or whatever directory
+your choose to for output in the moudules/config.pm module.  Also,
+I'm still learning git so bear with me. :)
 
 Good Luck!
 Improvments and addions will be greatly apprecated.
