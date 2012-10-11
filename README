@@ -27,7 +27,7 @@ and virtual hosts for Apache.  Data is read from a flat file with data
 seperated with ":".  The data is then inserted into a MySQL database.
 More informatin on these files can be found in the data/README file.
 Theroeticly you can run these programs from any host that has permissions
-to access a database on a remote host. 
+to access MySQL on a remote host. 
 
 Before you begin you will have to have a MySQL server installed and
 configured.  You will need the ability to create a table.  The 
