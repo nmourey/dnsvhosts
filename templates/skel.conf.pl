@@ -1,5 +1,5 @@
 $VirtualHost =<<VIRTHOST
-<VirtualHost $IPADDRESS:80>
+<VirtualHost $HOSTNAME:80>
 
 	## Add cgi-bin for virtual host.
 	ScriptAlias /cgi-bin/ "/var/www/vhosts/$HOSTNAME/cgi-bin/"
