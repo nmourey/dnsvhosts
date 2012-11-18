@@ -1,6 +1,6 @@
 #!/usr/bin/perl 
 ## Script to creat (RIP Dennis Riche) virtual hosts and DNS records.
-## Copywrite : Humdrum Computing.
+## Copywrite 2012 GPLv2, Humdrum Computing.
 ## Programmer : Nathan A. Mourey II
 
 ## A Gotcha that bit me : Not using local variables in subrutines..  use your my's  :-{)
@@ -22,6 +22,7 @@ $dsn = "DBI:mysql:$db;host=$host;port=$port";
 ## Connect to the mysql databases.
 sub db_connection {
 	## configure the connection not to auto commit, allowing rollbacks.
+	## thanks for the execllent man pages.
 	return $dbh = DBI->connect($dsn, $user, $pass, {
 		PrintError => 0,
 		AutoCommit => 0
