@@ -1,6 +1,6 @@
 #!/usr/bin/perl 
 ## Script to creat (RIP Dennis Riche) virtual hosts and DNS records.
-## Copywrite : Humdrum Computing.
+## Copywrite 2012, GPLv2 : Humdrum Computing.
 ## Programmer : Nathan A. Mourey II
 ## Great big thanks to the perl manpages and 94.9WHOM 
 
